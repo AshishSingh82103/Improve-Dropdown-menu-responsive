@@ -203,8 +203,36 @@ function setBorderWidth(width) {
   }
 
 
+  function changeText() {
+    const p = document.getElementById("pid");
+
+    p.style.color = "blue";
+    p.style.fontSize = "18pt";
+  }
+
+  const ss = document.styleSheets;
+
+for (let i = 0; i < ss.length; i++) {
+  for (let j = 0; j < ss[i].cssRules.length; j++) {
+    console.log(`${ss[i].cssRules[j].selectorText}\n`);
+  }
+}
+
+function stopEvent(event) {
+    const c2 = document.getElementById("c2");
+    c2.textContent = "hello";
+
+    // this ought to keep t-daddy from getting the click.
+    event.stopPropagation();
+    alert("event propagation halted.");
+  }
 
 
+  function load() {
+    const elem = document.getElementById("tbl1");
+    elem.addEventListener("click", stopEvent, false);
+    const elemet = 
+  }
 
 
 
