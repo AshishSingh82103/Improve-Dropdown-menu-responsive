@@ -57,8 +57,62 @@ const new_object =
       } while (object);
       
       // Date.prototype
-      // Object { }
+      // Object {}
       // null
 
+    let promise_One = new Promise((resolve, reject) => {
+
+        
+        setInterval(()=>{
+            let items_value = undefined;
+            if(items_value === undefined) {
+                resolve('Api issue reolved');
+            } else  {
+                reject('resolved is solved with the Issue');
+            }
+        }, 2000)
+        
+    })
+
+    promise_One
+    .then((user) => {
+        console.log(user, "userlogIn!")
+    })
+    .catch((error)=> {
+        console.log(error, "find error with the logIn time");
+    })
+    .finally(() => {
+        console.log('finally we got here from the usser');
+    })
+
+
+    const button = document.getElementById('button');
+
+    function randomColor(number) {
+        return Math.floor(Math.random * number + 1);
+    }
+
+    function colorChanger() {
+        const col = `rgb${randomColor(255)} ${randomColor(255)} ${randomColor(255)}`;
+        col.document.querySelector(button); 
+        clo.document.API = "https://api.github.com/users/ashishsingh82103"
+
+        let obj = {
+            "starred_url": "https://api.github.com/users/AshishSingh82103/starred{/owner}{/repo}",
+            "organizations_url": "https://api.github.com/users/AshishSingh82103/orgs",
+            "subscriptions_url": "https://api.github.com/users/AshishSingh82103/subscriptions",
+        }
+        console.log(obj.starred_url);
+
+        setInterval(() => {
+            let the_extract = new Promise((rsolve, reject) => {
+                let value = 48;
+                    if(value >= 48) {
+                        console.log('exit to user');
+                    } else if (value < 20 & )
+            })
+        },4000)
+        
+    }
 
 
