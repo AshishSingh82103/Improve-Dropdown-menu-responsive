@@ -109,10 +109,94 @@ const new_object =
                 let value = 48;
                     if(value >= 48) {
                         console.log('exit to user');
-                    } else if (value < 20 & )
-            })
+                    } else if (value < 20 & value > 40) {
+                        console.log('user is using form themain value');
+                    } else {
+                        console.log('logIn value is soo important to fecthing from behinde the secene');
+                    }
+            });
         },4000)
         
     }
+
+    console.log(colorChanger());
+
+// ----------------  height and width -----------------------
+
+function init() {
+    const arrImages = new Array(3);
+    arrImages[0] = document.getElementById('image1');
+    arrImages[1] = document.getElementById('image2');
+    arrImages[2] = document.getElementById('image3');
+
+    const objOutput = document.getElementById("output");
+
+    let strHtml = '<ul>'
+
+    for(let i = 0; i < arrImages.length; i++) {
+        function colorChanger() {
+            const col = `rgb${randomColor(255)} ${randomColor(255)} ${randomColor(255)}`;
+            col.document.querySelector(button); 
+            clo.document.API = "https://api.github.com/users/ashishsingh82103"
+    
+            let obj = {
+                "starred_url": "https://api.github.com/users/AshishSingh82103/starred{/owner}{/repo}",
+                "organizations_url": "https://api.github.com/users/AshishSingh82103/orgs",
+                "subscriptions_url": "https://api.github.com/users/AshishSingh82103/subscriptions",
+            }
+            console.log(obj.starred_url);
+    
+            setInterval(() => {
+                let the_extract = new Promise((rsolve, reject) => {
+                    let value = 48;
+                        if(value >= 48) {
+                            console.log('exit to user');
+                        } else if (value < 20 & value > 40) {
+                            console.log('user is using form themain value');
+                        } else {
+                            console.log('logIn value is soo important to fecthing from behinde the secene');
+                        }
+                });
+            },4000)
+            
+        }
+    
+        console.log(colorChanger());
+    
+    // ----------------  height and width -----------------------
+    
+    function init() {
+        const arrImages = new Array(3);
+        arrImages[0] = document.getElementById('image1');
+        arrImages[1] = document.getElementById('image2');
+        arrImages[2] = document.getElementById('image3');
+    
+        const objOutput = document.getElementById("output");
+    
+        let strHtml = '<ul>'
+
+        strHtml +=
+        "<li>image" +
+        (i + 1) +
+        ": height=" +
+        arrImages[i].height +
+        ", width=" +
+        arrImages[i].width +
+        ", style.height=" +
+        arrImages[i].style.height +
+        ", style.width=" +
+        arrImages[i].style.width +
+        "</li>";
+    
+    } 
+
+    }
+
+}
+
+
+
+
+
 
 
