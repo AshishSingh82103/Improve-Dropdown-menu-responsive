@@ -189,6 +189,9 @@ function init() {
         "</li>";
     
     } 
+    strHtml += "</ul>";
+
+    objOutput.innerHTML = strHtml;
 
     }
 
