@@ -233,7 +233,29 @@ function stopEvent(event) {
     elem.addEventListener("click", stopEvent, false);
     
   }
-  
+  function cStyles() {
+    const RefDiv = document.getElementById("d1");
+    const txtHeight = document.getElementById("t1");
+    const h_style = document.defaultView
+      .getComputedStyle(RefDiv, null)
+      .getPropertyValue("height");
+
+    txtHeight.value = h_style;
+
+    const txtWidth = document.getElementById("t2");
+    const w_style = document.defaultView
+      .getComputedStyle(RefDiv, null)
+      .getPropertyValue("width");
+
+    txtWidth.value = w_style;
+
+    const txtBackgroundColor = document.getElementById("t3");
+    const b_style = document.defaultView
+      .getComputedStyle(RefDiv, null)
+      .getPropertyValue("background-color");
+
+    txtBackgroundColor.value = b_style;
+  }
 
 
 
