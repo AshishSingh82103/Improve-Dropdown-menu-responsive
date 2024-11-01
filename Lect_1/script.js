@@ -231,8 +231,9 @@ function stopEvent(event) {
   function load() {
     const elem = document.getElementById("tbl1");
     elem.addEventListener("click", stopEvent, false);
-    const elemet = 
+    
   }
+  
 
 
 
