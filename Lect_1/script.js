@@ -316,6 +316,15 @@ const interval_codes = new promise_One(() => {
 
  console.log(my_Name);
 
+ let myUser = new Promise((resolve, reject) => {
+    const new_user = new Promise((resolve, reject) => {
+            console.log('node script js');
+    })
+
+    new_user = scope.js;
+    console.log("new_user");
+ })
+
 
 
 
