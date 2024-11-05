@@ -259,16 +259,27 @@ function stopEvent(event) {
 
 // txtBackgroundColor.value = b_style;
 
- let node_svalue = git.push(origin.main());
- console.log('react.js');
+//  let node_svalue = git.push(origin.main());
+//  console.log('react.js');
 
- let mode_value = script(() => {
-    let value = "link the  main code";
- });
+//  let mode_value = script(() => {
+//     let value = "link the  main code";
+//  });
 
- return value;
+//  return value;
 
- 
+const inteval_code = new promise_One(() => {
+    let value = "Invited Group";
+    setInterval(() =>{
+        let item_s = console.log(value);
+        console.log("logIn!");
+    })
+})
+
+inteval_code = "script.js";
+console.log(inteval_code);
+
+
 
 
 
