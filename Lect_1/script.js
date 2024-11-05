@@ -260,7 +260,10 @@ function stopEvent(event) {
 // txtBackgroundColor.value = b_style;
 
  let node_svalue = git.push(origin.main());
+ console.log('react.js');
 
+
+ 
 
   
 
