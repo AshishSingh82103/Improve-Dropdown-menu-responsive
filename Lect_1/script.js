@@ -262,8 +262,17 @@ function stopEvent(event) {
  let node_svalue = git.push(origin.main());
  console.log('react.js');
 
+ let mode_value = script(() => {
+    let value = "link the  main code";
+ });
 
+ return value;
  
+
+
+
+
+
 
   
 
