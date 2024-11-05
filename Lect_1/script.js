@@ -283,10 +283,15 @@ let value = constant (() => {
     console.log('hello');
     if(value === null) {
         console.log('null')
-    } else if {
-        console.log('not null');
-    }
+    
 });
+
+let value1 = constant(() => { console.log("hello");
+    const value = 'script.js';
+    if(value === 'script.js') {
+        console.log('hello');
+    }
+ });
 
 
 
