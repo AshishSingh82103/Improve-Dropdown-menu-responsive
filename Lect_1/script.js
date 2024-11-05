@@ -257,6 +257,9 @@ function stopEvent(event) {
     txtBackgroundColor.value = b_style;
   }
 
+// txtBackgroundColor.value = b_style;
+
+
   
 
 
