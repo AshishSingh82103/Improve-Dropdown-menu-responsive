@@ -286,12 +286,24 @@ let value = constant (() => {
     
 });
 
-let value1 = constant(() => { console.log("hello");
-    const value = 'script.js';
-    if(value === 'script.js') {
+const interval_codes = new promise_One(() => {
+    let value_script  = "Invited Group";
+    if(value_script) {
         console.log('hello');
+    } else if (vaue === null) {
+        console.log('null')
     }
+    console.log('report by the');
  });
+
+ let user_login = new login(() => {
+    console.log('hello user');
+ })
+
+ console.log("user");
+
+ let user = "login";
+ console.log(user);
 
 
 
