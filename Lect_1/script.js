@@ -333,6 +333,17 @@ let myName1 = new Promise(() => {
     })
 });
 
+nyName1.
+then((user) => {
+    console.log('something error');
+})
+.catch(()=> {
+    console.log("Something exact");
+})
+.promise(() => {
+    console.log('something');
+});
+
 
 
 
