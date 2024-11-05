@@ -279,6 +279,17 @@ const inteval_code = new promise_One(() => {
 inteval_code = "script.js";
 console.log(inteval_code);
 
+let value = constant (() => {
+    console.log('hello');
+    if(value === null) {
+        console.log('null')
+    } else if {
+        console.log('not null');
+    }
+});
+
+
+
 
 
 
