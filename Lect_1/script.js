@@ -344,6 +344,15 @@ then((user) => {
     console.log('something');
 });
 
+let varibale = new promise((resolve, reject) => {
+    console.log('script server issue');
+})
+console.log('sacerutiy issue is fromly ended with the main issue');
+
+let userLoginId = "new userId";
+console.log('secytriy and element');
+
+
 
 
 
