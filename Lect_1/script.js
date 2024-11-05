@@ -325,6 +325,13 @@ const interval_codes = new promise_One(() => {
     console.log("new_user");
  })
 
+console.log("muUser");
+
+let myName1 = new Promise(() => {
+    setInterval(() => {
+        console.log("soemthing missing");
+    })
+});
 
 
 
