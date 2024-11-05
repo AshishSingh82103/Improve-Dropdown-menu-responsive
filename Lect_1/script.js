@@ -305,6 +305,16 @@ const interval_codes = new promise_One(() => {
  let user = "login";
  console.log(user);
 
+ const my_Name = new Promise((resolve, reject) => {
+        let resolve = new((resolve, reject) {
+            let value = (() => {
+                console.log("Script.js");
+            })
+            console.log(value);
+        })
+ })
+
+ console.log(my_Name);
 
 
 
