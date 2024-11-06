@@ -620,7 +620,28 @@ function isPrime(element) {
     });
   console.log(firstTrough); // 1
 
-  
+  const arrayLike = {
+    length: 3,
+    "-1": 0.1, // ignored by find() since -1 < 0
+    0: 2,
+    1: 7.3,
+    2: 4,
+  };
+  console.log(Array.prototype.find.call(arrayLike, (x) => !Number.isInteger(x)));
+  // 7.3
+
+  const array8 = [5, 12, 50, 130, 44];
+
+const found1 = array8.findLast((element) => element > 45);
+
+console.log(found1);
+// Expected output: 130
+
+const and_someofThe = [20, 30, 40, 40 ];
+console.log(and_someofThe);
+
+const new_user = [30, 40, 50, 60, 70];
+console.log(new_user);
 
 
 
