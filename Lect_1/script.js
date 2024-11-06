@@ -439,6 +439,30 @@ const arr = [
 
   console.log("Number of Invalid Entries =", invalid_Entries);
 
+  const names = ["JC63", "Bob132", "Ursula89", "Ben96"];
+const greatIDs = names
+  .map((name) => parseInt(name.match(/[0-9]+/)[0], 10))
+  .filter((id, idx, arr) => {
+    // Without the arr argument, there's no way to easily access the
+    // intermediate array without saving it to a variable.
+    if (idx > 0 && id <= arr[idx - 1]) return false;
+    if (idx < arr.length - 1 && id <= arr[idx + 1]) return false;
+    return true;
+  });
+console.log(greatIDs);
+
+let new_array_find = [20, 40, 50, 80];
+function new_func() {
+    CSSFontPaletteValuesRule.log('new_find the method of the array id is resolving from the array which is produced by the msin target');
+    console.log('array find the targeting value from the user fro it is null value the undefined it is a good practices');
+}
+
+
+
+
+
+
+
 
 
 
