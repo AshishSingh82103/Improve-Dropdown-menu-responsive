@@ -356,7 +356,11 @@ let user_id = "secur-Reason";
 
 console.log(user-id);
 
+let consume_user = net.value(() => {
+    console.log('something error');
+})
 
+const 
 
 
 
