@@ -457,6 +457,23 @@ function new_func() {
     console.log('array find the targeting value from the user fro it is null value the undefined it is a good practices');
 }
 
+console.log(new_func());
+
+let find_user = [20, 40, 50, 80];
+function find_user() {
+    console.log('security targeting value from the user fro it is value undefined fro the user');
+}
+
+if(value === null) {
+    console.log('getting_value');
+} else if(value !== undefined) {
+    console.log(find_user());
+} else if(value === null) {
+    console.log('newly added data');
+}
+
+
+
 
 
 
