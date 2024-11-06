@@ -451,18 +451,18 @@ const greatIDs = names
   });
 console.log(greatIDs);
 
-let new_array_find = [20, 40, 50, 80];
-function new_func() {
-    CSSFontPaletteValuesRule.log('new_find the method of the array id is resolving from the array which is produced by the msin target');
-    console.log('array find the targeting value from the user fro it is null value the undefined it is a good practices');
-}
+// let new_array_find = [20, 40, 50, 80];
+// function new_func() {
+//     CSSFontPaletteValuesRule.log('new_find the method of the array id is resolving from the array which is produced by the msin target');
+//     console.log('array find the targeting value from the user fro it is null value the undefined it is a good practices');
+// }
 
-console.log(new_func());
+// console.log(new_func());
 
-let find_user = [20, 40, 50, 80];
-function find_user() {
-    console.log('security targeting value from the user fro it is value undefined fro the user');
-}
+// let find_user = [20, 40, 50, 80];
+// function find_user() {
+//     console.log('security targeting value from the user fro it is value undefined fro the user');
+// }
 
 if(value === null) {
     console.log('getting_value');
@@ -524,6 +524,63 @@ const arrayLike = {
   };
   console.log(Array.prototype.filter.call(arrayLike, (x) => x <= "b"));
   // [ 'a', 'b' ]
+
+  
+  const array1 = [5, 12, 8, 130, 44];
+
+  const found = array1.find((element) => element > 10);
+  
+  console.log(found);
+  // Expected output: 12
+
+  const inventory = [
+    { name: "apples", quantity: 2 },
+    { name: "bananas", quantity: 0 },
+    { name: "cherries", quantity: 5 },
+  ];
+  
+  function isCherries(fruit) {
+    return fruit.name === "cherries";
+  }
+  
+  console.log(inventory.find(isCherries));
+  // { name: 'cherries', quantity: 5 }
+
+
+  const inventory = [
+    { name: "apples", quantity: 2 },
+    { name: "bananas", quantity: 0 },
+    { name: "cherries", quantity: 5 },
+  ];
+  
+  const result = inventory.find(({ name }) => name === "cherries");
+  
+  console.log(result); // { name: 'cherries', quantity: 5 }
+
+  function isPrime(element, index, array) {
+    let start = 2;
+    while (start <= Math.sqrt(element)) {
+      if (element % start++ < 1) {
+        return false;
+      }
+    }
+    return element > 1;
+  }
+  
+  console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
+  console.log([4, 5, 8, 12].find(isPrime)); // 5
+
+  const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
+const firstTrough = numbers
+  .filter((num) => num > 0)
+  .find((num, idx, arr) => {
+    // Without the arr argument, there's no way to easily access the
+    // intermediate array without saving it to a variable.
+    if (idx > 0 && num >= arr[idx - 1]) return false;
+    if (idx < arr.length - 1 && num >= arr[idx + 1]) return false;
+    return true;
+  });
+console.log(firstTrough); // 1
 
 
 
