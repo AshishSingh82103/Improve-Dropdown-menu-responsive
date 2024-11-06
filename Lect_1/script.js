@@ -472,6 +472,49 @@ if(value === null) {
     console.log('newly added data');
 }
 
+let new_user5 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let item_s = 'segressive_value';
+        console.log('security reason for while a reason');
+    }, 4000)
+})
+
+console.log([1, , undefined].filter((x) => x === undefined)); // [undefined]
+console.log([1, , undefined].filter((x) => x !== 2)); // [1, undefined]
+
+let user_Login = undefined;
+
+console.log(user_Login);
+
+let nespormisess = new Promise((resolve, reject) => {
+    setTimeout(() =>{
+        console.log('securtiy reason is random of the main user from the user');
+    },2000)
+
+})
+
+console.log('secrity reason is the main cause which is the reason');
+
+let user_login = true;
+
+let Id = 832109;
+
+let password = '*****';
+
+let securityReason = 'security@3243';
+
+if(Id === 832109) {
+    console.log('Id');
+} else if(securityReason) {
+    console.log('securityReason');
+} else if(password === '****') {
+    console.log('password');
+}
+
+let new_constUSer = function(num) {
+    console.log('script.js', num);
+}
+
 
 
 
