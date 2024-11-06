@@ -1,369 +1,443 @@
-// ----------------- Dom(data object model) -----------
+// // ----------------- Dom(data object model) -----------
 
-const object1 = {
-    name: ["ashish", 'ankit', 'neha'],
-    age: 28,
-    id: 832109,
-    password: 'singh@82103',
-    bio: function() {
-        console.log(`${this.name[0]} ${this.name[1]} ${this.name[2]} years`);
-    },
-    introduceSelf: function() {
-        console.log(`Hi! I'm ${this.name[0]}.`)
-    },
-};
+// const object1 = {
+//     name: ["ashish", 'ankit', 'neha'],
+//     age: 28,
+//     id: 832109,
+//     password: 'singh@82103',
+//     bio: function() {
+//         console.log(`${this.name[0]} ${this.name[1]} ${this.name[2]} years`);
+//     },
+//     introduceSelf: function() {
+//         console.log(`Hi! I'm ${this.name[0]}.`)
+//     },
+// };
 
-object1.name;
-object1.name[0];
-object1.age;
-object1.bio();
-object1.introduceSelf();
+// object1.name;
+// object1.name[0];
+// object1.age;
+// object1.bio();
+// object1.introduceSelf();
 
-const new_object = 
-    {
-        object_query: true,
-        API: 'singhashish82103@gmail.com',
-        fecthingId: 'concateniated-id',
-        const_id: 'apireserve',
-        "id": 117755948,
-        "node_id": "U_kgDOBwTQLA",
-        "site_admin": false,
-        bio: function() {
-            console.log(`this is ${this.node_id} node id`)
-        }
-    }
+// const new_object = 
+//     {
+//         object_query: true,
+//         API: 'singhashish82103@gmail.com',
+//         fecthingId: 'concateniated-id',
+//         const_id: 'apireserve',
+//         "id": 117755948,
+//         "node_id": "U_kgDOBwTQLA",
+//         "site_admin": false,
+//         bio: function() {
+//             console.log(`this is ${this.node_id} node id`)
+//         }
+//     }
 
-    console.log(new_object.object_query);
-    new_object.bio();
+//     console.log(new_object.object_query);
+//     new_object.bio();
 
 
-    const myObject = {
-        city: "Denmark",
-        greet() {
-          console.log(`Greetings from ${this.city}`);
-        },
-      };
+//     const myObject = {
+//         city: "Denmark",
+//         greet() {
+//           console.log(`Greetings from ${this.city}`);
+//         },
+//       };
       
-      myObject.greet()
+//       myObject.greet()
 
 
 
-      const myDate = new Date();
-      let object = myDate;
+//       const myDate = new Date();
+//       let object = myDate;
       
-      do {
-        object = Object.getPrototypeOf(object);
-        console.log(object);
-      } while (object);
+//       do {
+//         object = Object.getPrototypeOf(object);
+//         console.log(object);
+//       } while (object);
       
-      // Date.prototype
-      // Object {}
-      // null
+//       // Date.prototype
+//       // Object {}
+//       // null
 
-    let promise_One = new Promise((resolve, reject) => {
+//     let promise_One = new Promise((resolve, reject) => {
 
         
-        setInterval(()=>{
-            let items_value = undefined;
-            if(items_value === undefined) {
-                resolve('Api issue reolved');
-            } else  {
-                reject('resolved is solved with the Issue');
-            }
-        }, 2000)
+//         setInterval(()=>{
+//             let items_value = undefined;
+//             if(items_value === undefined) {
+//                 resolve('Api issue reolved');
+//             } else  {
+//                 reject('resolved is solved with the Issue');
+//             }
+//         }, 2000)
         
-    })
+//     })
 
-    promise_One
-    .then((user) => {
-        console.log(user, "userlogIn!")
-    })
-    .catch((error)=> {
-        console.log(error, "find error with the logIn time");
-    })
-    .finally(() => {
-        console.log('finally we got here from the usser');
-    })
+//     promise_One
+//     .then((user) => {
+//         console.log(user, "userlogIn!")
+//     })
+//     .catch((error)=> {
+//         console.log(error, "find error with the logIn time");
+//     })
+//     .finally(() => {
+//         console.log('finally we got here from the usser');
+//     })
 
 
-    const button = document.getElementById('button');
+//     const button = document.getElementById('button');
 
-    function randomColor(number) {
-        return Math.floor(Math.random * number + 1);
-    }
+//     function randomColor(number) {
+//         return Math.floor(Math.random * number + 1);
+//     }
 
-    function colorChanger() {
-        const col = `rgb${randomColor(255)} ${randomColor(255)} ${randomColor(255)}`;
-        col.document.querySelector(button); 
-        clo.document.API = "https://api.github.com/users/ashishsingh82103"
+//     function colorChanger() {
+//         const col = `rgb${randomColor(255)} ${randomColor(255)} ${randomColor(255)}`;
+//         col.document.querySelector(button); 
+//         clo.document.API = "https://api.github.com/users/ashishsingh82103"
 
-        let obj = {
-            "starred_url": "https://api.github.com/users/AshishSingh82103/starred{/owner}{/repo}",
-            "organizations_url": "https://api.github.com/users/AshishSingh82103/orgs",
-            "subscriptions_url": "https://api.github.com/users/AshishSingh82103/subscriptions",
-        }
-        console.log(obj.starred_url);
+//         let obj = {
+//             "starred_url": "https://api.github.com/users/AshishSingh82103/starred{/owner}{/repo}",
+//             "organizations_url": "https://api.github.com/users/AshishSingh82103/orgs",
+//             "subscriptions_url": "https://api.github.com/users/AshishSingh82103/subscriptions",
+//         }
+//         console.log(obj.starred_url);
 
-        setInterval(() => {
-            let the_extract = new Promise((rsolve, reject) => {
-                let value = 48;
-                    if(value >= 48) {
-                        console.log('exit to user');
-                    } else if (value < 20 & value > 40) {
-                        console.log('user is using form themain value');
-                    } else {
-                        console.log('logIn value is soo important to fecthing from behinde the secene');
-                    }
-            });
-        },4000)
+//         setInterval(() => {
+//             let the_extract = new Promise((rsolve, reject) => {
+//                 let value = 48;
+//                     if(value >= 48) {
+//                         console.log('exit to user');
+//                     } else if (value < 20 & value > 40) {
+//                         console.log('user is using form themain value');
+//                     } else {
+//                         console.log('logIn value is soo important to fecthing from behinde the secene');
+//                     }
+//             });
+//         },4000)
         
-    }
+//     }
 
-    console.log(colorChanger());
+//     console.log(colorChanger());
 
-// ----------------  height and width -----------------------
+// // ----------------  height and width -----------------------
 
-function init() {
-    const arrImages = new Array(3);
-    arrImages[0] = document.getElementById('image1');
-    arrImages[1] = document.getElementById('image2');
-    arrImages[2] = document.getElementById('image3');
+// function init() {
+//     const arrImages = new Array(3);
+//     arrImages[0] = document.getElementById('image1');
+//     arrImages[1] = document.getElementById('image2');
+//     arrImages[2] = document.getElementById('image3');
 
-    const objOutput = document.getElementById("output");
+//     const objOutput = document.getElementById("output");
 
-    let strHtml = '<ul>'
+//     let strHtml = '<ul>'
 
-    for(let i = 0; i < arrImages.length; i++) {
-        function colorChanger() {
-            const col = `rgb${randomColor(255)} ${randomColor(255)} ${randomColor(255)}`;
-            col.document.querySelector(button); 
-            clo.document.API = "https://api.github.com/users/ashishsingh82103"
+//     for(let i = 0; i < arrImages.length; i++) {
+//         function colorChanger() {
+//             const col = `rgb${randomColor(255)} ${randomColor(255)} ${randomColor(255)}`;
+//             col.document.querySelector(button); 
+//             clo.document.API = "https://api.github.com/users/ashishsingh82103"
     
-            let obj = {
-                "starred_url": "https://api.github.com/users/AshishSingh82103/starred{/owner}{/repo}",
-                "organizations_url": "https://api.github.com/users/AshishSingh82103/orgs",
-                "subscriptions_url": "https://api.github.com/users/AshishSingh82103/subscriptions",
-            }
-            console.log(obj.starred_url);
+//             let obj = {
+//                 "starred_url": "https://api.github.com/users/AshishSingh82103/starred{/owner}{/repo}",
+//                 "organizations_url": "https://api.github.com/users/AshishSingh82103/orgs",
+//                 "subscriptions_url": "https://api.github.com/users/AshishSingh82103/subscriptions",
+//             }
+//             console.log(obj.starred_url);
     
-            setInterval(() => {
-                let the_extract = new Promise((rsolve, reject) => {
-                    let value = 48;
-                        if(value >= 48) {
-                            console.log('exit to user');
-                        } else if (value < 20 & value > 40) {
-                            console.log('user is using form themain value');
-                        } else {
-                            console.log('logIn value is soo important to fecthing from behinde the secene');
-                        }
-                });
-            },4000)
+//             setInterval(() => {
+//                 let the_extract = new Promise((rsolve, reject) => {
+//                     let value = 48;
+//                         if(value >= 48) {
+//                             console.log('exit to user');
+//                         } else if (value < 20 & value > 40) {
+//                             console.log('user is using form themain value');
+//                         } else {
+//                             console.log('logIn value is soo important to fecthing from behinde the secene');
+//                         }
+//                 });
+//             },4000)
             
-        }
+//         }
     
-        console.log(colorChanger());
+//         console.log(colorChanger());
     
-    // ----------------  height and width -----------------------
+//     // ----------------  height and width -----------------------
     
-    function init() {
-        const arrImages = new Array(3);
-        arrImages[0] = document.getElementById('image1');
-        arrImages[1] = document.getElementById('image2');
-        arrImages[2] = document.getElementById('image3');
+//     function init() {
+//         const arrImages = new Array(3);
+//         arrImages[0] = document.getElementById('image1');
+//         arrImages[1] = document.getElementById('image2');
+//         arrImages[2] = document.getElementById('image3');
     
-        const objOutput = document.getElementById("output");
+//         const objOutput = document.getElementById("output");
     
-        let strHtml = '<ul>'
+//         let strHtml = '<ul>'
 
-        strHtml +=
-        "<li>image" +
-        (i + 1) +
-        ": height=" +
-        arrImages[i].height +
-        ", width=" +
-        arrImages[i].width +
-        ", style.height=" +
-        arrImages[i].style.height +
-        ", style.width=" +
-        arrImages[i].style.width +
-        "</li>";
+//         strHtml +=
+//         "<li>image" +
+//         (i + 1) +
+//         ": height=" +
+//         arrImages[i].height +
+//         ", width=" +
+//         arrImages[i].width +
+//         ", style.height=" +
+//         arrImages[i].style.height +
+//         ", style.width=" +
+//         arrImages[i].style.width +
+//         "</li>";
     
-    } 
-    strHtml += "</ul>";
+//     } 
+//     strHtml += "</ul>";
 
-    objOutput.innerHTML = strHtml;
+//     objOutput.innerHTML = strHtml;
 
-    }
+//     }
 
-}
+// }
 
-function setBorderWidth(width) {
-    document.getElementById("img1").style.borderWidth = width + "px";
+// function setBorderWidth(width) {
+//     document.getElementById("img1").style.borderWidth = width + "px";
     
-  }
+//   }
 
 
-  function changeText() {
-    const p = document.getElementById("pid");
+//   function changeText() {
+//     const p = document.getElementById("pid");
 
-    p.style.color = "blue";
-    p.style.fontSize = "18pt";
-  }
+//     p.style.color = "blue";
+//     p.style.fontSize = "18pt";
+//   }
 
-  const ss = document.styleSheets;
+//   const ss = document.styleSheets;
 
-for (let i = 0; i < ss.length; i++) {
-  for (let j = 0; j < ss[i].cssRules.length; j++) {
-    console.log(`${ss[i].cssRules[j].selectorText}\n`);
-  }
-}
+// for (let i = 0; i < ss.length; i++) {
+//   for (let j = 0; j < ss[i].cssRules.length; j++) {
+//     console.log(`${ss[i].cssRules[j].selectorText}\n`);
+//   }
+// }
 
-function stopEvent(event) {
-    const c2 = document.getElementById("c2");
-    c2.textContent = "hello";
+// function stopEvent(event) {
+//     const c2 = document.getElementById("c2");
+//     c2.textContent = "hello";
 
-    // this ought to keep t-daddy from getting the click.
-    event.stopPropagation();
-    alert("event propagation halted.");
-  }
+//     // this ought to keep t-daddy from getting the click.
+//     event.stopPropagation();
+//     alert("event propagation halted.");
+//   }
 
 
-  function load() {
-    const elem = document.getElementById("tbl1");
-    elem.addEventListener("click", stopEvent, false);
+//   function load() {
+//     const elem = document.getElementById("tbl1");
+//     elem.addEventListener("click", stopEvent, false);
     
-  }
-  function cStyles() {
-    const RefDiv = document.getElementById("d1");
-    const txtHeight = document.getElementById("t1");
-    const h_style = document.defaultView
-      .getComputedStyle(RefDiv, null)
-      .getPropertyValue("height");
+//   }
+//   function cStyles() {
+//     const RefDiv = document.getElementById("d1");
+//     const txtHeight = document.getElementById("t1");
+//     const h_style = document.defaultView
+//       .getComputedStyle(RefDiv, null)
+//       .getPropertyValue("height");
 
-    txtHeight.value = h_style;
+//     txtHeight.value = h_style;
 
-    const txtWidth = document.getElementById("t2");
-    const w_style = document.defaultView
-      .getComputedStyle(RefDiv, null)
-      .getPropertyValue("width");
+//     const txtWidth = document.getElementById("t2");
+//     const w_style = document.defaultView
+//       .getComputedStyle(RefDiv, null)
+//       .getPropertyValue("width");
 
-    txtWidth.value = w_style;
+//     txtWidth.value = w_style;
 
-    const txtBackgroundColor = document.getElementById("t3");
-    const b_style = document.defaultView
-      .getComputedStyle(RefDiv, null)
-      .getPropertyValue("background-color");
+//     const txtBackgroundColor = document.getElementById("t3");
+//     const b_style = document.defaultView
+//       .getComputedStyle(RefDiv, null)
+//       .getPropertyValue("background-color");
 
-    txtBackgroundColor.value = b_style;
-  }
+//     txtBackgroundColor.value = b_style;
+//   }
 
-// txtBackgroundColor.value = b_style;
+// // txtBackgroundColor.value = b_style;
 
-//  let node_svalue = git.push(origin.main());
-//  console.log('react.js');
+// //  let node_svalue = git.push(origin.main());
+// //  console.log('react.js');
 
-//  let mode_value = script(() => {
-//     let value = "link the  main code";
+// //  let mode_value = script(() => {
+// //     let value = "link the  main code";
+// //  });
+
+// //  return value;
+
+// const inteval_code = new promise_One(() => {
+//     let value = "Invited Group";
+//     setInterval(() =>{
+//         let item_s = console.log(value);
+//         console.log("logIn!");
+//     })
+// })
+
+// inteval_code = "script.js";
+// console.log(inteval_code);
+
+// let value = constant (() => {
+//     console.log('hello');
+//     if(value === null) {
+//         console.log('null')
+    
+// });
+
+// const interval_codes = new promise_One(() => {
+//     let value_script  = "Invited Group";
+//     if(value_script) {
+//         console.log('hello');
+//     } else if (vaue === null) {
+//         console.log('null')
+//     }
+//     console.log('report by the');
 //  });
 
-//  return value;
+//  let user_login = new login(() => {
+//     console.log('hello user');
+//  })
 
-const inteval_code = new promise_One(() => {
-    let value = "Invited Group";
-    setInterval(() =>{
-        let item_s = console.log(value);
-        console.log("logIn!");
-    })
-})
+//  console.log("user");
 
-inteval_code = "script.js";
-console.log(inteval_code);
+//  let user = "login";
+//  console.log(user);
 
-let value = constant (() => {
-    console.log('hello');
-    if(value === null) {
-        console.log('null')
-    
-});
+//  const my_Name = new Promise((resolve, reject) => {
+//         let resolve = new((resolve, reject) {
+//             let value = (() => {
+//                 console.log("Script.js");
+//             })
+//             console.log(value);
+//         })
+//  })
 
-const interval_codes = new promise_One(() => {
-    let value_script  = "Invited Group";
-    if(value_script) {
-        console.log('hello');
-    } else if (vaue === null) {
-        console.log('null')
+//  console.log(my_Name);
+
+//  let myUser = new Promise((resolve, reject) => {
+//     const new_user = new Promise((resolve, reject) => {
+//             console.log('node script js');
+//     })
+
+//     new_user = scope.js;
+//     console.log("new_user");
+//  })
+
+// console.log("muUser");
+
+// let myName1 = new Promise(() => {
+//     setInterval(() => {
+//         console.log("soemthing missing");
+//     })
+// });
+
+// nyName1.
+// then((user) => {
+//     console.log('something error');
+// })
+// .catch(()=> {
+//     console.log("Something exact");
+// })
+// .promise(() => {
+//     console.log('something');
+// });
+
+// let varibale = new promise((resolve, reject) => {
+//     console.log('script server issue');
+// })
+// console.log('sacerutiy issue is fromly ended with the main issue');
+
+// let userLoginId = "new userId";
+// console.log('secytriy and element');
+
+// let user_id = "secur-Reason";
+
+// console.log(user-id);
+
+// let consume_user = net.value(() => {
+//     console.log('something error');
+// })
+
+// const new_user = new promise((resolve, reject) => {
+//     const new_user2 = undefined;
+//     setInterval(() => {
+//         if(new_user2 === undefined) {
+//             console.log('something error');
+//         } else if (new_user2 === null) {
+//             console.log('fetching data');
+//         }
+//     }, 4000)
+// })
+
+// new_user
+// .then((user) => {
+//     console.log(user, "user");
+// })
+// .catch((error) => {
+//     console.log(error, 'error');
+// })
+// .finally(() => {
+//     console.log('hello user');
+// })
+
+// --------- Array fillter -------------
+
+const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter((word) => word.length > 6);
+console.log(result);
+
+
+function isBigValue(value) {
+    return value >= 10;
+}
+const filtterd = [12, 5, 8, 130, 44].filter(isBigValue);
+
+console.log(filtterd);
+
+
+const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num) {
+    for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+            return false;
+        }
     }
-    console.log('report by the');
- });
+    return num > 1
+}
+console.log(array.filter(isPrime));
 
- let user_login = new login(() => {
-    console.log('hello user');
- })
+const arr = [
+    { id: 15 },
+    { id: -1 },
+    { id: 0 },
+    { id: 3 },
+    { id: 12.2 },
+    {},
+    { id: null },
+    { id: NaN },
+    { id: "undefined" },
+  ];
 
- console.log("user");
+  let invalid_Entries = 0;
 
- let user = "login";
- console.log(user);
+  function filterByID(item) {
+    if(Number.isFinite(item.id) && item.id !== 0) {
+        return true;
+    }
 
- const my_Name = new Promise((resolve, reject) => {
-        let resolve = new((resolve, reject) {
-            let value = (() => {
-                console.log("Script.js");
-            })
-            console.log(value);
-        })
- })
+    invalid_Entries++;
+    return false;
+    
 
- console.log(my_Name);
+  }
+  const arrByID = arr.filter(filterByID);
 
- let myUser = new Promise((resolve, reject) => {
-    const new_user = new Promise((resolve, reject) => {
-            console.log('node script js');
-    })
+  console.log("Filteared Array\n", arrByID);
 
-    new_user = scope.js;
-    console.log("new_user");
- })
-
-console.log("muUser");
-
-let myName1 = new Promise(() => {
-    setInterval(() => {
-        console.log("soemthing missing");
-    })
-});
-
-nyName1.
-then((user) => {
-    console.log('something error');
-})
-.catch(()=> {
-    console.log("Something exact");
-})
-.promise(() => {
-    console.log('something');
-});
-
-let varibale = new promise((resolve, reject) => {
-    console.log('script server issue');
-})
-console.log('sacerutiy issue is fromly ended with the main issue');
-
-let userLoginId = "new userId";
-console.log('secytriy and element');
-
-let user_id = "secur-Reason";
-
-console.log(user-id);
-
-let consume_user = net.value(() => {
-    console.log('something error');
-})
-
-const 
-
-
-
+  console.log("Number of Invalid Entries =", invalid_Entries);
 
 
 
