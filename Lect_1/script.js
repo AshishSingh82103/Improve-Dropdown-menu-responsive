@@ -677,11 +677,29 @@ const rename_undefined = new Promise(() => {
 console.log(rename_undefined);
 
 
+const the_value = 30;
+if(the_value === 30) {
+    console.log('array is fined');
+} else if(the_value === 'fined value is the main crucx') {
+    console.log('new_user logIn!');
+}
 
 
+console.log('logIn between the main blocks');
+
+let the_cell = [30, 49];
+console.log(the_cell);
 
 
+console.log('resume the all of code which is code!');
 
+let singh = "singh@ashish82103";
+console.log(singh);
+
+
+let promise = new Promise(() => {
+    console.log('resolve the issue');
+})
 
 
   
