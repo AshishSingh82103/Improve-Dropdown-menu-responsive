@@ -657,7 +657,24 @@ new_loginID = 'new-login';
 console.log(new_loginID);
 
 
+const importID = function import_user(value) {
+    const rename = userByID(value)
+    console.log(rename);
+    if(rename === 'value') {
+        console.log('rename the value');
+    } else if(rename === 'undefined') {
+        console.log('rename undefined');
+    }
+    return rename;
+}
 
+const rename_undefined = new Promise(() => {
+    setInterval(() => {
+        let user_id = null;
+    }, 2000)
+});
+
+console.log(rename_undefined);
 
 
 
