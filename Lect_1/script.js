@@ -684,6 +684,9 @@ if(the_value === 30) {
     console.log('new_user logIn!');
 }
 
+else {
+    console.log('login');
+}
 
 console.log('logIn between the main blocks');
 
@@ -742,6 +745,18 @@ nextTick.js = new_userbid(() => {
         })
     
 })
+
+console.log('config new');
+
+console.log('resgine not the main of the value of the code which is given from the master regime');
+
+
+if(value != 'not_user_login') {
+     console.log('next.js');
+} else if (value != nextTick.js) {
+    console.log('prime.js');
+}
+
 
 
 
