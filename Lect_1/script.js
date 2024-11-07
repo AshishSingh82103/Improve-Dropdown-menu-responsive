@@ -384,257 +384,257 @@
 
 // --------- Array fillter -------------
 
-const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
-const result = words.filter((word) => word.length > 6);
-console.log(result);
+// const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+// const result = words.filter((word) => word.length > 6);
+// console.log(result);
 
 
-function isBigValue(value) {
-    return value >= 10;
-}
-const filtterd = [12, 5, 8, 130, 44].filter(isBigValue);
+// function isBigValue(value) {
+//     return value >= 10;
+// }
+// const filtterd = [12, 5, 8, 130, 44].filter(isBigValue);
 
-console.log(filtterd);
+// console.log(filtterd);
 
 
-const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+// const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-function isPrime(num) {
-    for(let i = 2; i < num; i++) {
-        if(num % i === 0) {
-            return false;
-        }
-    }
-    return num > 1
-}
-console.log(array.filter(isPrime));
+// function isPrime(num) {
+//     for(let i = 2; i < num; i++) {
+//         if(num % i === 0) {
+//             return false;
+//         }
+//     }
+//     return num > 1
+// }
+// console.log(array.filter(isPrime));
 
-const arr = [
-    { id: 15 },
-    { id: -1 },
-    { id: 0 },
-    { id: 3 },
-    { id: 12.2 },
-    {},
-    { id: null },
-    { id: NaN },
-    { id: "undefined" },
-  ];
+// const arr = [
+//     { id: 15 },
+//     { id: -1 },
+//     { id: 0 },
+//     { id: 3 },
+//     { id: 12.2 },
+//     {},
+//     { id: null },
+//     { id: NaN },
+//     { id: "undefined" },
+//   ];
 
-  let invalid_Entries = 0;
+//   let invalid_Entries = 0;
 
-  function filterByID(item) {
-    if(Number.isFinite(item.id) && item.id !== 0) {
-        return true;
-    }
+//   function filterByID(item) {
+//     if(Number.isFinite(item.id) && item.id !== 0) {
+//         return true;
+//     }
 
-    invalid_Entries++;
-    return false;
+//     invalid_Entries++;
+//     return false;
     
 
-  }
-  const arrByID = arr.filter(filterByID);
+//   }
+//   const arrByID = arr.filter(filterByID);
 
-  console.log("Filteared Array\n", arrByID);
+//   console.log("Filteared Array\n", arrByID);
 
-  console.log("Number of Invalid Entries =", invalid_Entries);
+//   console.log("Number of Invalid Entries =", invalid_Entries);
 
-  const names = ["JC63", "Bob132", "Ursula89", "Ben96"];
-const greatIDs = names
-  .map((name) => parseInt(name.match(/[0-9]+/)[0], 10))
-  .filter((id, idx, arr) => {
-    // Without the arr argument, there's no way to easily access the
-    // intermediate array without saving it to a variable.
-    if (idx > 0 && id <= arr[idx - 1]) return false;
-    if (idx < arr.length - 1 && id <= arr[idx + 1]) return false;
-    return true;
-  });
-console.log(greatIDs);
+//   const names = ["JC63", "Bob132", "Ursula89", "Ben96"];
+// const greatIDs = names
+//   .map((name) => parseInt(name.match(/[0-9]+/)[0], 10))
+//   .filter((id, idx, arr) => {
+//     // Without the arr argument, there's no way to easily access the
+//     // intermediate array without saving it to a variable.
+//     if (idx > 0 && id <= arr[idx - 1]) return false;
+//     if (idx < arr.length - 1 && id <= arr[idx + 1]) return false;
+//     return true;
+//   });
+// console.log(greatIDs);
 
-// let new_array_find = [20, 40, 50, 80];
-// function new_func() {
-//     CSSFontPaletteValuesRule.log('new_find the method of the array id is resolving from the array which is produced by the msin target');
-//     console.log('array find the targeting value from the user fro it is null value the undefined it is a good practices');
+// // let new_array_find = [20, 40, 50, 80];
+// // function new_func() {
+// //     CSSFontPaletteValuesRule.log('new_find the method of the array id is resolving from the array which is produced by the msin target');
+// //     console.log('array find the targeting value from the user fro it is null value the undefined it is a good practices');
+// // }
+
+// // console.log(new_func());
+
+// // let find_user = [20, 40, 50, 80];
+// // function find_user() {
+// //     console.log('security targeting value from the user fro it is value undefined fro the user');
+// // }
+
+// if(value === null) {
+//     console.log('getting_value');
+// } else if(value !== undefined) {
+//     console.log(find_user());
+// } else if(value === null) {
+//     console.log('newly added data');
 // }
 
-// console.log(new_func());
+// let new_user5 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let item_s = 'segressive_value';
+//         console.log('security reason for while a reason');
+//     }, 4000)
+// })
 
-// let find_user = [20, 40, 50, 80];
-// function find_user() {
-//     console.log('security targeting value from the user fro it is value undefined fro the user');
+// console.log([1, , undefined].filter((x) => x === undefined)); // [undefined]
+// console.log([1, , undefined].filter((x) => x !== 2)); // [1, undefined]
+
+// let user_Login = undefined;
+
+// console.log(user_Login);
+
+// let nespormisess = new Promise((resolve, reject) => {
+//     setTimeout(() =>{
+//         console.log('securtiy reason is random of the main user from the user');
+//     },2000)
+
+// })
+
+// console.log('secrity reason is the main cause which is the reason');
+
+// let user_login = true;
+
+// let Id = 832109;
+
+// let password = '*****';
+
+// let securityReason = 'security@3243';
+
+// if(Id === 832109) {
+//     console.log('Id');
+// } else if(securityReason) {
+//     console.log('securityReason');
+// } else if(password === '****') {
+//     console.log('password');
 // }
 
-if(value === null) {
-    console.log('getting_value');
-} else if(value !== undefined) {
-    console.log(find_user());
-} else if(value === null) {
-    console.log('newly added data');
-}
+// let new_constUSer = function(num) {
+//     console.log('script.js', num);
+// }
 
-let new_user5 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let item_s = 'segressive_value';
-        console.log('security reason for while a reason');
-    }, 4000)
-})
-
-console.log([1, , undefined].filter((x) => x === undefined)); // [undefined]
-console.log([1, , undefined].filter((x) => x !== 2)); // [1, undefined]
-
-let user_Login = undefined;
-
-console.log(user_Login);
-
-let nespormisess = new Promise((resolve, reject) => {
-    setTimeout(() =>{
-        console.log('securtiy reason is random of the main user from the user');
-    },2000)
-
-})
-
-console.log('secrity reason is the main cause which is the reason');
-
-let user_login = true;
-
-let Id = 832109;
-
-let password = '*****';
-
-let securityReason = 'security@3243';
-
-if(Id === 832109) {
-    console.log('Id');
-} else if(securityReason) {
-    console.log('securityReason');
-} else if(password === '****') {
-    console.log('password');
-}
-
-let new_constUSer = function(num) {
-    console.log('script.js', num);
-}
-
-const arrayLike = {
-    length: 3,
-    0: "a",
-    1: "b",
-    2: "c",
-    3: "a", // ignored by filter() since length is 3
-  };
-  console.log(Array.prototype.filter.call(arrayLike, (x) => x <= "b"));
-  // [ 'a', 'b' ]
+// const arrayLike = {
+//     length: 3,
+//     0: "a",
+//     1: "b",
+//     2: "c",
+//     3: "a", // ignored by filter() since length is 3
+//   };
+//   console.log(Array.prototype.filter.call(arrayLike, (x) => x <= "b"));
+//   // [ 'a', 'b' ]
 
   
-  const array1 = [5, 12, 8, 130, 44];
+//   const array1 = [5, 12, 8, 130, 44];
 
-  const found = array1.find((element) => element > 10);
+//   const found = array1.find((element) => element > 10);
   
-  console.log(found);
-  // Expected output: 12
+//   console.log(found);
+//   // Expected output: 12
 
-  const inventory = [
-    { name: "apples", quantity: 2 },
-    { name: "bananas", quantity: 0 },
-    { name: "cherries", quantity: 5 },
-  ];
+//   const inventory = [
+//     { name: "apples", quantity: 2 },
+//     { name: "bananas", quantity: 0 },
+//     { name: "cherries", quantity: 5 },
+//   ];
   
-  function isCherries(fruit) {
-    return fruit.name === "cherries";
-  }
+//   function isCherries(fruit) {
+//     return fruit.name === "cherries";
+//   }
   
-  console.log(inventory.find(isCherries));
-  // { name: 'cherries', quantity: 5 }
+//   console.log(inventory.find(isCherries));
+//   // { name: 'cherries', quantity: 5 }
 
 
-  const inventory = [
-    { name: "apples", quantity: 2 },
-    { name: "bananas", quantity: 0 },
-    { name: "cherries", quantity: 5 },
-  ];
+//   const inventory = [
+//     { name: "apples", quantity: 2 },
+//     { name: "bananas", quantity: 0 },
+//     { name: "cherries", quantity: 5 },
+//   ];
   
-  const result = inventory.find(({ name }) => name === "cherries");
+//   const result = inventory.find(({ name }) => name === "cherries");
   
-  console.log(result); // { name: 'cherries', quantity: 5 }
+//   console.log(result); // { name: 'cherries', quantity: 5 }
 
-  function isPrime(element, index, array) {
-    let start = 2;
-    while (start <= Math.sqrt(element)) {
-      if (element % start++ < 1) {
-        return false;
-      }
-    }
-    return element > 1;
-  }
+//   function isPrime(element, index, array) {
+//     let start = 2;
+//     while (start <= Math.sqrt(element)) {
+//       if (element % start++ < 1) {
+//         return false;
+//       }
+//     }
+//     return element > 1;
+//   }
   
-  console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
-  console.log([4, 5, 8, 12].find(isPrime)); // 5
+//   console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
+//   console.log([4, 5, 8, 12].find(isPrime)); // 5
 
-  const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
-const firstTrough = numbers
-  .filter((num) => num > 0)
-  .find((num, idx, arr) => {
-    // Without the arr argument, there's no way to easily access the
-    // intermediate array without saving it to a variable.
-    if (idx > 0 && num >= arr[idx - 1]) return false;
-    if (idx < arr.length - 1 && num >= arr[idx + 1]) return false;
-    return true;
-  });
-console.log(firstTrough); // 1
+//   const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
+// const firstTrough = numbers
+//   .filter((num) => num > 0)
+//   .find((num, idx, arr) => {
+//     // Without the arr argument, there's no way to easily access the
+//     // intermediate array without saving it to a variable.
+//     if (idx > 0 && num >= arr[idx - 1]) return false;
+//     if (idx < arr.length - 1 && num >= arr[idx + 1]) return false;
+//     return true;
+//   });
+// console.log(firstTrough); // 1
 
-const array1 = [5, 12, 8, 130, 44];
+// const array1 = [5, 12, 8, 130, 44];
 
-const isLargeNumber = (element) => element > 13;
+// const isLargeNumber = (element) => element > 13;
 
-console.log(array1.findIndex(isLargeNumber));
-// Expected output: 3
+// console.log(array1.findIndex(isLargeNumber));
+// // Expected output: 3
 
-findIndex(callbackFn)
-findIndex(callbackFn, thisArg)
+// findIndex(callbackFn)
+// findIndex(callbackFn, thisArg)
 
-function isPrime(element) {
-    if (element % 2 === 0 || element < 2) {
-      return false;
-    }
-    for (let factor = 3; factor <= Math.sqrt(element); factor += 2) {
-      if (element % factor === 0) {
-        return false;
-      }
-    }
-    return true;
-  }
+// function isPrime(element) {
+//     if (element % 2 === 0 || element < 2) {
+//       return false;
+//     }
+//     for (let factor = 3; factor <= Math.sqrt(element); factor += 2) {
+//       if (element % factor === 0) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
   
-  console.log([4, 6, 8, 9, 12].findIndex(isPrime)); // -1, not found
-  console.log([4, 6, 7, 9, 12].findIndex(isPrime)); // 2 (array[2] is 7)
+//   console.log([4, 6, 8, 9, 12].findIndex(isPrime)); // -1, not found
+//   console.log([4, 6, 7, 9, 12].findIndex(isPrime)); // 2 (array[2] is 7)
 
 
-  const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
-  const firstTrough = numbers
-    .filter((num) => num > 0)
-    .findIndex((num, idx, arr) => {
-      // Without the arr argument, there's no way to easily access the
-      // intermediate array without saving it to a variable.
-      if (idx > 0 && num >= arr[idx - 1]) return false;
-      if (idx < arr.length - 1 && num >= arr[idx + 1]) return false;
-      return true;
-    });
-  console.log(firstTrough); // 1
+//   const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
+//   const firstTrough = numbers
+//     .filter((num) => num > 0)
+//     .findIndex((num, idx, arr) => {
+//       // Without the arr argument, there's no way to easily access the
+//       // intermediate array without saving it to a variable.
+//       if (idx > 0 && num >= arr[idx - 1]) return false;
+//       if (idx < arr.length - 1 && num >= arr[idx + 1]) return false;
+//       return true;
+//     });
+//   console.log(firstTrough); // 1
 
-  const arrayLike = {
-    length: 3,
-    "-1": 0.1, // ignored by find() since -1 < 0
-    0: 2,
-    1: 7.3,
-    2: 4,
-  };
-  console.log(Array.prototype.find.call(arrayLike, (x) => !Number.isInteger(x)));
-  // 7.3
+//   const arrayLike = {
+//     length: 3,
+//     "-1": 0.1, // ignored by find() since -1 < 0
+//     0: 2,
+//     1: 7.3,
+//     2: 4,
+//   };
+//   console.log(Array.prototype.find.call(arrayLike, (x) => !Number.isInteger(x)));
+//   // 7.3
 
-  const array8 = [5, 12, 50, 130, 44];
+//   const array8 = [5, 12, 50, 130, 44];
 
-const found1 = array8.findLast((element) => element > 45);
+// const found1 = array8.findLast((element) => element > 45);
 
-console.log(found1);
+// console.log(found1);
 // Expected output: 130
 
 const and_someofThe = [20, 30, 40, 40 ];
@@ -642,6 +642,21 @@ console.log(and_someofThe);
 
 const new_user = [30, 40, 50, 60, 70];
 console.log(new_user);
+
+const new_userbid = ["for-in", "for-let", 'for-each'];
+
+for(let i = 0; i < new_userbid.length; i++) {
+    console.log(new_userbid[i]);
+}
+
+new_userbid.forEach((key, value) =>{
+    console.log(key, value);
+});
+
+new_loginID = 'new-login';
+console.log(new_loginID);
+
+
 
 
 
