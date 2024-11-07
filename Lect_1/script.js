@@ -757,8 +757,11 @@ if(value != 'not_user_login') {
     console.log('prime.js');
 }
 
+//  d, i, o, u, x, X, a, A, e, E, f, F, g, h, i, j, k, l, m, n, o, p, q, r, s ,t, u, v, w, x, y, z;
 
 
+
+//  printf, fprintf, dprintf, sprintf, snprintf, vprintf, vfprintf,vdprintf, vsprintf, vsnprintf - formatted output conversion;
 
 
 
