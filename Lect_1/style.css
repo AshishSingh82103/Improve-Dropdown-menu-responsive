@@ -24,3 +24,14 @@ body {
     max-width: 20px;
   }
 
+  li {
+    margin: 15px;
+    padding: 50px;
+    color: blue;
+    background-color: aliceblue;
+    font: 100;
+    border-radius: 54px;
+    right: auto;
+    left: auto;
+  }
+
