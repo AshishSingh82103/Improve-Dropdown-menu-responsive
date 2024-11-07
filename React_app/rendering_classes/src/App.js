@@ -16,12 +16,20 @@ function App() {
         <p>
           Replell the code in the editor.
         </p>
+        <aside>
+          Perform the task is the link of the code!
+        </aside>
+
+        <p>link rel./stylesheet is the main  code which is perform main link app.js</p>
+
+        <aside src = './stylesheet'>relm stylesheet</aside>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
+>
           Learn React
         </a>
       </header>
