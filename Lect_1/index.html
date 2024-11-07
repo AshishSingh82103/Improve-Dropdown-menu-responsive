@@ -93,8 +93,33 @@
     <input type="butoon"></table><input type="text">
       <br>
       <aside>THis is the nav link of the code which is given by the recvery main agent which is doscovered by the target shot</aside>
-       
+       <ol id="order-list">
+        <li>One
+          <ul id="unorder-list">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+          </ul>
+        </li>
+        <li>two</li>
+        <li>Three</li>
+       </ol>
     
+
+       // Load the full build.
+var _ = require('lodash');
+// Load the core build.
+var _ = require('lodash/core');
+// Load the FP build for immutable auto-curried iteratee-first data-last methods.
+var fp = require('lodash/fp');
+ 
+// Load method categories.
+var array = require('lodash/array');
+var object = require('lodash/fp/object');
+ 
+// Cherry-pick methods for smaller browserify/rollup/webpack bundles.
+var at = require('lodash/at');
+var curryN = require('lodash/fp/curryN');
 
 </body>
 <script src="./script.js"></script>
