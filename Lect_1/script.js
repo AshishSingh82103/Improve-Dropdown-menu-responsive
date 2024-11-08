@@ -880,7 +880,15 @@ const parent = {
     { value: 3, getValue() { return this.value; } },
   ];
   
-  console.log(boxes);
+console.log(boxes);
+
+console.log('boxxes');
+
+console.log('list of the resatart is the main cause.');
+
+if(isPrime != 'consume') {
+    console.log('security is the reason')
+}
 
 
 
