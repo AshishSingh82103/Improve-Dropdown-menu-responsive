@@ -723,11 +723,11 @@ let run = async () => {
 run();
 
 
-import { mkdir } from 'fs/promises'
+// import { mkdir } from 'fs/promises'
 
-let run1 = () => mkdir('./docs/data', { recursive: true })
+// let run1 = () => mkdir('./docs/data', { recursive: true })
 
-run1();
+// run1();
 
 nextTick.js = new_userbid(() => {
     new promise(() => {
@@ -773,18 +773,53 @@ if(value != 'not_user_login') {
 //   }
 
 
-nextTick.js();
+// nextTick.js();
 
-nettrick(() => {
-    const new_array = function() {
-        `backtick is norm with the const user finding value`
-    } 
-    return new_array;
-});
-nettrick();
+// nettrick(() => {
+//     const new_array = function() {
+//         `backtick is norm with the const user finding value`
+//     } 
+//     return new_array;
+// });
+// nettrick();
 
 
-  
+// console.log('newly logIn!');
+
+// let array = [2, 4, 5, 9, 10];
+
+// array.forEach(() => {
+//     console.log(array);
+// })
+
+// const header = (
+//     <header>
+//       <h1>Mozilla Developer Network</h1>
+//       <p>is it paragraph tag</p>
+//       <aside>aside to hover on the link of the code</aside>
+//       <ol>
+//         <li>
+//             <li>One
+//                 <li>Git-Repo</li>
+//                 <li>Repo-link access</li>
+//                 <li>link of the code!</li>
+//             </li>
+//             <li>Two
+//                 <li>link to refer the count of the same purpose</li>
+//                 <li>link to refer the count of the same purpose to one of the link ot genrate here..</li>
+//                 <li>link relm of the synopsis here</li>
+//             </li>
+//             <li>Three</li>
+//         </li>
+//       </ol>
+//     </header>
+//   );
+
+//  const new_user5 = function() {
+//     console.log('new-login id existing');
+//  } 
+
+//  new_user5();
 
   
 
