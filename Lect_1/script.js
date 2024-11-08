@@ -821,6 +821,51 @@ if(value != 'not_user_login') {
 
 //  new_user5();
 
+
+const function_settel = function() {
+    let user_login = true;
+    let id = 832109;
+    if(user_login === true) {
+        console.log('existing user is here');
+    } else if (id === 832109) {
+        console.log('id is correct')
+    }
+}
+function_settel();
+
+let item = null;
+
+if(login === flase) {
+    console.log('node value is here')
+} else if(login_id === 'ishere') {
+    console.log('null');
+}
+
+const o = {
+    a: 1,
+    b: 2,
+
+    // __proto__ sets the [[prototype]]. it's sepecified here
+    // as another object litreal.
+
+    __proto__: {
+        b: 3,
+        c: 4,
+    }
+}
+
+console.log(o.a);
+
+console.log(o.b); // 2
+
+const parent = {
+    value: 2,
+    method() {
+      return this.value + 1;
+    },
+  };
+
+  console.log(parent);
   
 
 
