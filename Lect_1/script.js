@@ -773,7 +773,17 @@ if(value != 'not_user_login') {
 //   }
 
 
-nextTick.js()
+nextTick.js();
+
+nettrick(() => {
+    const new_array = function() {
+        `backtick is norm with the const user finding value`
+    } 
+    return new_array;
+});
+nettrick();
+
+
   
 
   
