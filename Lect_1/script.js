@@ -866,6 +866,9 @@ const parent = {
   };
 
   console.log(parent);
+
+  console.log(parent.method()); // 3
+
   
 
 
