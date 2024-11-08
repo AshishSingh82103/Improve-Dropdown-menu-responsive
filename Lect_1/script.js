@@ -869,7 +869,18 @@ const parent = {
 
   console.log(parent.method()); // 3
 
+
+  console.log('perfect-list which is porper');
+
+  console.log('siinghashish82103@gmail.com');
+
+  const boxes = [
+    { value: 1, getValue() { return this.value; } },
+    { value: 2, getValue() { return this.value; } },
+    { value: 3, getValue() { return this.value; } },
+  ];
   
+  console.log(boxes);
 
 
 
