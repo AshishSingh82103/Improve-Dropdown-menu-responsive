@@ -929,6 +929,14 @@ console.log(Array.from([1, 2, 3], (x) => x + x));
 // Expected output: Array [2, 4, 6]
 
 
+console.log('Node-script.js');
+
+Array.from(arrayLike);
+Array.from(arrayLike, mapFn);
+Array.from(arrayLike, mapFn, thisArg);
+
+Array.from(arrayLike, mapFn, thisArg);
+
 
 
 
