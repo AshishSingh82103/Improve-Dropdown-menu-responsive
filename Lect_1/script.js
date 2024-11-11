@@ -908,6 +908,18 @@ console.log(srr.forEach((key, vaue))
 
 
 
+let mufunc_user =  function() {
+    let user_invalid = null;
+    if(user_invalid === null) {
+        console.log('nullifiy is over from it');
+    } else if( user_invalid !== undefined) {
+        console.log('user get access form its api');
+    } else {
+        console.log('something went worng');
+    }
+}
+
+mufunc_user();
 
 
 
