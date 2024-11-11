@@ -888,7 +888,32 @@ console.log('list of the resatart is the main cause.');
 
 if(isPrime != 'consume') {
     console.log('security is the reason')
-}
+};
+
+
+const fimily_return = new Promise((value) => {
+    console.log(finding_followers);
+    return value;
+})
+
+console.log('resume is the return offset is before and');
+
+
+let length_undefined = 'node-script.js';
+console.log(length_undefined);
+
+let srr =[34, 50, 60 , 70 , 90];
+console.log(srr.forEach((key, vaue))
+)
+
+
+
+
+
+
+
+
+
 
 
 
