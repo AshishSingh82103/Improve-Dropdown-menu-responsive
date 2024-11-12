@@ -705,6 +705,7 @@ let promise = new Promise(() => {
 })
 
 
+import { notDeepEqual } from 'assert';
 // This script exists to workaround create-react-app's limitation around importing outside /src
 // Once this moves out of docs/beta, we could just drive readme generation out of docs/src/data instead of docs/data and not copy
 
@@ -936,6 +937,62 @@ Array.from(arrayLike, mapFn);
 Array.from(arrayLike, mapFn, thisArg);
 
 Array.from(arrayLike, mapFn, thisArg);
+
+let promiseTwo = new Promise((resolve, reject) => {
+    let new_user = function() {
+        if(new_user === null) {
+            console.log('new_user find the value is remarking');
+        } else if(new_user === undefined) {
+            console.log('new_user find the value is remarking');
+        } else {
+            console.log('new-user identified');
+        }
+    function let_user(num1) {
+        console.log('logine user_exist');
+        let result = num1 + num2;
+        return result;
+        }
+        let_user();
+
+        let find_value = 'sesional value';
+        console.log(find_value);
+
+        if(find_value === true) {
+            result = num1 + num2;
+            
+        }
+
+    }
+    new_user();
+})
+
+promiseTwo();
+
+LargestContentfulPaint = notDeepEqual
+
+const promise_one = new Promise((resolve, reject) => {
+    setInterval(() => {
+        let value = true;
+        if(value) {
+            resolve(value);
+        } else {
+            reject('error printied');
+        }
+    }, 4000);
+
+})
+promise_one
+.then((value) => {
+    console.log(value, "execution api");
+})
+.catch((error) = {
+    console.log(error,'error printied');
+})
+.finally(() => {
+    console.log('value find finally')
+})
+
+
 
 
 
