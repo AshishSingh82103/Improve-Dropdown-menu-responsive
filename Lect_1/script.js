@@ -985,12 +985,15 @@ promise_one
 .then((value) => {
     console.log(value, "execution api");
 })
-.catch((error) = {
+.catch((error) =>{
     console.log(error,'error printied');
 })
 .finally(() => {
     console.log('value find finally')
-})
+});
+
+const variable = 'find the get-log value';
+console.log(variable);
 
 
 
