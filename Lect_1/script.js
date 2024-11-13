@@ -1039,7 +1039,51 @@ const asyncIterable = (async function* () {
     ]),
   ).then((array) => console.log(array));
 
-  
+  Array.fromAsync(
+    new map([
+        [1, 2],
+        [3, 4],
+
+    ]),
+
+  ).then((array) => console.log(array));
+
+  Array.fromAsync(
+    new set([Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)]),
+
+  ).then((array) => console.log(array));
+
+function delayedValue(v) {
+    return new Promise((resolve) => setTimeout(() =>resolve(v), 1000));
+}
+
+Array.fromAsync(
+    [delayedValue(1), delayedValue(2), delayedValue(3)],
+    (element) => delayedValue(element * 2),
+).then((array) => console.log(array));
+
+
+function makeIterableOfPromise() {
+    for (let i = 0; i < 5; i++) {
+        yield new Promise((resolve) => setTimeout(resolve, 100));
+    }
+}
+(async()=> {
+    console.time("Array.fromAsync() time");
+    await Array.fromAsync(makeIterableOfPromise());
+    console.timeEnd('Array.fromAsync() time');
+    // array.fromAsync() time : 502.610 ms
+
+    console.time('Promise.all() time');
+    await promise.all(makeIterableOfPromise());
+    console.timeEnd("Promise.all() time");
+
+    // promise.all() time: 101.728 ms
+})
+
+
+
+
 
 
 
