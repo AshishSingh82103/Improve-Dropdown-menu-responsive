@@ -995,6 +995,40 @@ promise_one
 const variable = 'find the get-log value';
 console.log(variable);
 
+let create_obj = {
+    id: 117755948,
+    login_id: 'ashish832109',
+    node_value: '"U_kgDOBwTQLA"',
+    login: true,
+    password: 'singh@82103',
+}
+create_obj();
+
+console.log(create_obj.id);
+
+let funct_user = function() {
+    let value = true;
+    let id = 117755948;
+    let login_value = false;
+
+    if(value === true) {
+        console.log('value identified by user');
+    } else if (id === 117755948) {
+        console.log('id has been excess');
+    } else if(login_value === false) {
+        console.log('value genrated');
+    }  
+}
+Array.fromAsync(arrayLike);
+Array.fromAsync(arrayLike, mapFn);
+Array.fromAsync(arrayLike, mapFn, thisArg);
+
+
+
+
+
+
+
 
 
 
