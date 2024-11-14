@@ -41,7 +41,9 @@ body {
     syntax: error;
     color: red;
     background-color: aliceblue;
-    color-scheme: align-items: flex-start;;
+    color: aliceblue;
+    background-image: none;
+    background-size: cover;
 
   }
 
