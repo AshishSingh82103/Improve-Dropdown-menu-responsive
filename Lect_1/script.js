@@ -1220,8 +1220,10 @@ let run2 = async () => {
   )
   await copyFile('./docs/data/tests.json', './docs/beta/src/data/tests.json')
 }
-
+8115085085 
 run2();
+
+// commit -m dose not refer to find the value of it's original value;
 
 
 
