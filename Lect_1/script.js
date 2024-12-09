@@ -1115,6 +1115,7 @@ import prettier from 'prettier'
 import { readdir, writeFile } from 'fs/promises'
 import { stringify } from './utils'
 
+
 let getTests = async () => {
   // Collect tests into an object by overriding global test fns
   let tests = {}
@@ -1123,10 +1124,17 @@ let getTests = async () => {
   // Capture the tests in an object
   global.it = (name, fn) => {
     tests[_.replace('should ', '', name)] = fn
+    tests[_.replace('should', '', name)] = fn
     return {
       timeout: _.noop,
+      
     }
+    
   }
+
+  console.log('correct answer is the remaining part is blowing up towards the mind setting up from it behinde');
+
+  console.log('sechduling from it none of the prompt');
 
   // Dynamically import tests to fill the test object
   await _.flow(
