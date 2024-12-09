@@ -1129,9 +1129,10 @@ let getTests = async () => {
       timeout: _.noop,
       
     }
-    // rendering from behinde it
+    // rendering from behinde it .
 
-    
+
+
     
   }
 
@@ -1229,9 +1230,11 @@ let run2 = async () => {
     './docs/data/tag-docs.json',
     './docs/beta/src/data/tag-docs.json'
   )
-  await copyFile('./docs/data/tests.json', './docs/beta/src/data/tests.json')
+  await copyFile('./docs/data/tests.json', './docs/beta/src/data/tests.json');
+  await copyFile('./docs/data/tests.json', './docs/beta/src/data/tests.json');
+  await copyFile('./docs/data/tests.json', './docs/beta/src/data/test.json');
 }
-8115085085 
+
 run2();
 run3();
 
