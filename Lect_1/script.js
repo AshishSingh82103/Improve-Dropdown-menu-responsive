@@ -1239,6 +1239,28 @@ run2();
 run3();
 
 
+const promise2 = new Promise((resolve, reject) => {
+  setInterval(() => {
+    let valueUndefined = null;
+    if(valueUndefined === null) {
+      console.log('Value rejected');
+    } else if (valueUndefined === error) {
+      console.log('error handeling rejection issue')
+    }
+  }, 2000);
+})
+promise2
+.then((user) => {
+  console.log(user, "user error handeling resolve");
+})
+.catch((error) => {
+  console.log(error, 'sample size resolve');
+})
+.finally((resolved) => {
+  console.log(resolve,'solving resolve the issue');
+});
+
+
 
 
 // commit -m dose not refer to find the value of it's original value;
