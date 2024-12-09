@@ -14,4 +14,6 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// If we are using the main js file from it's own holding from the main side of the var if the main target on this platefrom
+reportWebVitals();
 reportWebVitals();
