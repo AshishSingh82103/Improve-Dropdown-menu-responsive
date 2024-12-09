@@ -10,11 +10,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  font-size: 50px;
-
-  from {
-    transform: 360deg;
-  } to {
-    text-replace: none;
-  }
 }
+
+
