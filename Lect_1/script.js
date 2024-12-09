@@ -1257,8 +1257,22 @@ promise2
   console.log(error, 'sample size resolve');
 })
 .finally((resolved) => {
-  console.log(resolve,'solving resolve the issue');
+  console.log(resolved,'solving resolve the issue');
 });
+
+const newResolveApi =  ((num1, num2) =>{
+    return num1 + num2;
+})
+
+let objectOne = {
+  finallay : true,
+  resolvevalue : false,
+  restart : 'On',
+  return : value,
+}
+objectOne();
+
+
 
 
 
