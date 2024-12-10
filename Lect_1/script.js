@@ -1351,6 +1351,26 @@ promiseFour
   console.log(value, "finally got something value");
 })
 
+let promisesix = function(num1, num2) {
+  return num1 * num2;
+}
+
+crossOriginIsolated.log(promisesix(3, 4));
+
+let value_undefined = 68;
+
+if(value_undefined === isFinite) {
+  console.log('neumeric value is here');
+} else if (value_undeifned === null) {
+  console.log('value login is here from the user');
+} else {
+  console.log('login id here from it is user');
+}
+
+
+
+
+// mod is the instant culuer of it's teem from the main area behinde the sceen 
 // commit -m dose not refer to find the value of it's original value;
 
 
