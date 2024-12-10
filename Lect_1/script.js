@@ -1270,6 +1270,7 @@ let objectOne = {
   restart : 'On',
   return : value,
 }
+objectTwo();
 objectOne();
 
 
@@ -1277,6 +1278,10 @@ objectOne();
 
 
 
+
+
+
+i
 // commit -m dose not refer to find the value of it's original value;
 
 
