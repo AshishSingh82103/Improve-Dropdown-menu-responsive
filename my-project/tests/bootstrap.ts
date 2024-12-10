@@ -6,6 +6,7 @@ import testUtils from '@adonisjs/core/services/test_utils'
 
 /**
  * This file is imported by the "bin/test.ts" entrypoint file
+ * configure plugins in the way to protect it dismissal from behinde it's side of the main cause of it!
  */
 
 /**
