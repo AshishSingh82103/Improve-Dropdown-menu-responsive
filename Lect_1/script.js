@@ -1317,24 +1317,42 @@ let objThree = {
   "ETag": "\"b0d604ce5349407d57352d5e7e1c7c734ab505a9b79f091bf7964b524e3b0b03\"",
   "tag": "\"b505a9b79f091bf7964b524e3b0b03\"",
   "id": 832109,
-  
-
+  "Content-Type": "application/javascript; charset=utf-8",
+  "network_count": 68,
+  "subscribers_count": 28,
+  userViewType: "Public",
+  userinfo: true,
+  userlogin: flase,
+  url: "https://www.goggle.com",
+  network_count: 68,
+  subscribers_count: 28,
+  "network": "no",
 }
+objThree();
 
+let promiseFour = new Promise((resolve, reject) => {
+    setInterval(() =>{
+      let value = "832109";
+      if(value === Number) {
+        console.log(resolve, "getting execute number");
+      } else {
+        console.log(reject, "through error");
+      }
+    },4000)
+})
+promiseFour
+.then((resolve) =>{
+  console.log(resolve, "resolve issue");
+})
+.catch((reject) => {
+  console.log(reject, "Getting error");
+})
+.finally((value) => {
+  console.log(value, "finally got something value");
+})
 
-
-
-
-
-
-
-
-
-
-
-
-i
 // commit -m dose not refer to find the value of it's original value;
+
 
 
 
