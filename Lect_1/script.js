@@ -1222,6 +1222,7 @@ run()
 // Once this moves out of docs/beta, we could just drive readme generation out of docs/src/data instead of docs/data and not copy
 
 import { copyFile, mkdir } from 'fs/promises'
+import { getPriority } from 'os';
 
 let run2 = async () => {
   await mkdir('./docs/beta/src/data', { recursive: true })
@@ -1269,9 +1270,39 @@ let objectOne = {
   resolvevalue : false,
   restart : 'On',
   return : value,
+  git_commits_url: "https://api.github.com/repos/smartprocure/futil-js/git/commits{/sha}",
+  git_url : "https://api.github.com/repos/smartprocure",
+  git_hub: "singhashish82103@github.com",
+  git_repo_count: 34,
+
 }
-objectTwo();
 objectOne();
+
+let objTwo = {
+  objectOne: "classified",
+  comments_url: "https://api.github.com/repos/smartprocure/futil-js/comments{/number}",
+  Comment: "https://apigithub.com/repos/comments{/numberCount}",
+  nit_unit: 3000,
+  getPriority: "https://api.github.com/repos/smartprocure/futil-js/priority",
+  "key": "mit",
+  "name": "MIT License",
+  "spdx_id": "MIT",
+  "url": "https://api.github.com/licenses/mit",
+  "node_id": "MDc6TGljZW5zZTEz",
+  "forks_count": 68,
+  "mirror_url": null,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 33,
+}
+objTwo();
+
+
+let inside_value = 
+
+
+
+
 
 
 
