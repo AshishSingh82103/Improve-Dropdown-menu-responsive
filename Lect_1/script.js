@@ -1298,7 +1298,28 @@ let objTwo = {
 objTwo();
 
 
-let inside_value = 
+let inside_value = null;
+if(inside_value === null) {
+  console.log('value inheritance');
+} else if(inside_value === undefined) {
+  console.log('value herited');
+}
+
+let objThree = {
+  "visibility": "public",
+  "forks": 68,
+  "open_issues": 33,
+  "watchers": 995,
+  "default_branch": "master",
+  "temp_clone_token": null,
+  "Cache-Control": "public, max-age=60, s-maxage=60",
+  "Vary": "Accept",
+  "ETag": "\"b0d604ce5349407d57352d5e7e1c7c734ab505a9b79f091bf7964b524e3b0b03\"",
+  "tag": "\"b505a9b79f091bf7964b524e3b0b03\"",
+  "id": 832109,
+  
+
+}
 
 
 
