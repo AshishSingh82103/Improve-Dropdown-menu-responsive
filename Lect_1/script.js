@@ -1367,6 +1367,15 @@ if(value_undefined === isFinite) {
   console.log('login id here from it is user');
 }
 
+let function_1 = "value_undefined";
+let function_2 = "git_repo extract";
+
+console.log(function_1);
+console.log(function_2);
+*
+
+
+
 
 
 
